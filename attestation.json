@@ -1,0 +1,9 @@
+{
+  "pluginId": "neobase.demineur",
+  "repo": "NDesumeur/neobase-plugin-demineur",
+  "version": "1.0.0",
+  "sha256": "c98a7262863dfc254933a53a562411d06bb74e831f24392fef74e1cd2919e49f",
+  "approvedAt": "2026-10-31T16:22:01.595Z",
+  "neobase": ">=4.0.0",
+  "signature": "Y0qrCQ5jrRWXNsaarRUMzKgcPO/rJPqEQdZOpT1lCNVup3cN0SSUPPdcIvC+yH42rxENsd5o5BfbmH2AGPlVAQ=="
+}
