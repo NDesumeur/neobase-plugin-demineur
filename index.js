@@ -1,6 +1,6 @@
 // Démineur : ton appli d'origine (HTML et code inchangés), livrée en plugin.
-// Ses données sont dans le dossier du plugin, que NeoBase sauvegarde (synchro cloud et sauvegardes) ; à la première ouverture elle reprend ce que tu avais dans NeoBase.
-// Elle tourne dans le bac à sable de NeoBase, avec ses outils d'interface (ctx.host) et seulement les autorisations de son plugin.json.
+// Ses données sont dans le dossier du plugin, que NeoDex sauvegarde (synchro cloud et sauvegardes) ; à la première ouverture elle reprend ce que tu avais dans NeoDex.
+// Elle tourne dans le bac à sable de NeoDex, avec ses outils d'interface (ctx.host) et seulement les autorisations de son plugin.json.
 const HTML = "<div class=\"appWrap wide\">\n      <div class=\"agHead\"><span class=\"label\">Démineur</span><span class=\"hint\" id=\"msInfo\"></span><div class=\"agNav\"><select class=\"f gSel\" id=\"msLevel\" title=\"Taille du plateau\"></select>\n        <label class=\"check\" title=\"Le plateau se résout toujours par la logique, sans jamais devoir deviner\"><input type=\"checkbox\" id=\"msNoGuess\"> Sans hasard</label>\n        <label class=\"check\" title=\"Le clic droit pose un drapeau, puis un « ? »\"><input type=\"checkbox\" id=\"msMarks\"> Marques ?</label>\n        <button class=\"btn px\" id=\"msHint\" title=\"Ouvre une case sûre (+10 s, pas de record)\">INDICE</button><button class=\"btn main px\" id=\"msNewBtn\">NOUVELLE PARTIE</button></div></div>\n      <div class=\"gameBox msBox\"><canvas id=\"msCanvas\" width=\"160\" height=\"190\"></canvas></div>\n      <div class=\"hint\">Clic : ouvrir une case · clic droit : drapeau (puis « ? ») · clic sur un chiffre dont tous les drapeaux sont posés (ou clic molette, ou les deux boutons) : ouvre ses voisines · clic sur le visage : nouvelle partie. Le chiffre d'une case = le nombre de mines autour. Le premier clic n'est jamais une mine. « Sans hasard » : le plateau se résout toujours par la logique. Meilleurs temps et statistiques sauvegardés et synchronisés.</div>\n    </div>";
 /*CSS-MOVED*/ const CSS = `.gameBox{display:grid;place-items:center;padding:10px;background:#05010b;box-shadow:0 0 0 3px var(--line2)}
 .gameBox.msBox canvas{aspect-ratio:auto;image-rendering:pixelated;max-width:100%}
@@ -9,10 +9,10 @@ const HTML = "<div class=\"appWrap wide\">\n      <div class=\"agHead\"><span cl
 .gSel{width:auto;font-size:14px;padding:6px 10px;margin-right:8px}
 .shGrid td.num{text-align:right}
 .nbaTeam.lost .tn{color:var(--muted)}
-`;  // le style de ce plugin (il utilise les variables du thème de NeoBase)
+`;  // le style de ce plugin (il utilise les variables du thème de NeoDex)
 export default async function (ctx) {
   const view = ctx.view;
-  if (!ctx.host) { view.textContent = "Ce plugin doit être approuvé par NeoBase pour s'ouvrir."; return; }
+  if (!ctx.host) { view.textContent = "Ce plugin doit être approuvé par NeoDex pour s'ouvrir."; return; }
   const host = ctx.host, { el, toast, sfx, ask, newTab, pixIcon, PIX, WX } = host;
   const folder = ctx.folder, legacy = ctx.legacy || {};
   ctx.host.addStyle(CSS);
