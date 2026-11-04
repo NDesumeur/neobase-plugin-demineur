@@ -1,7 +1,7 @@
 {
   "id": "neobase.demineur",
   "name": "Démineur",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "author": "NDesumeur",
   "description": "Ouvre toutes les cases sans mine : drapeaux, niveaux, grilles sans hasard.",
   "icon": "icon.png",
@@ -13,7 +13,8 @@
   "mobile": false,
   "system": false,
   "dependencies": {},
+  "sdk": "2.1.0",
   "permissions": [
-    "full"
+    "storage"
   ]
 }
