@@ -1,7 +1,7 @@
 {
   "id": "neodex.demineur",
   "name": "Démineur",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": "NDesumeur",
   "description": "Ouvre toutes les cases sans mine : drapeaux, niveaux, grilles sans hasard.",
   "icon": "icon.png",
