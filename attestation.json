@@ -1,9 +1,9 @@
 {
   "pluginId": "neodex.demineur",
   "repo": "NDesumeur/neodex-plugin-demineur",
-  "version": "1.1.0",
-  "sha256": "068b83fefec87b39513c989174c3e66e0f0f02b4ddd4831d271be0f525ec1ff6",
-  "approvedAt": "2026-11-04T10:05:10.890Z",
+  "version": "1.1.1",
+  "sha256": "e5837ae386ca561fccfca48e918162d4f05e1ce8d7bb7def1f4e6def18502360",
+  "approvedAt": "2026-11-06T21:35:47.977Z",
   "neobase": ">=4.0.0",
-  "signature": "wEOjqpUzGE685DqsCzcPPuKuWiqXTOtYz1dHErJoMOU6xZst+V311uBsGluyjrc2wrkBlYdA8ebq6jis4P+oDA=="
+  "signature": "tY5kXtmyUgEIVg/7MavKA1FydSvhAA/y0DsU+ifFOZbiYgzEpsOJd6kf7yDFJ94hO6GN0MYuggof/4KbRM7CBQ=="
 }
